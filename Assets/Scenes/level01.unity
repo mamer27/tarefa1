@@ -4096,9 +4096,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1375268191}
   - component: {fileID: 1375268190}
-  - component: {fileID: 1375268192}
   - component: {fileID: 1375268194}
   - component: {fileID: 1375268193}
+  - component: {fileID: 1375268192}
   m_Layer: 0
   m_Name: bird
   m_TagString: Untagged
@@ -4177,14 +4177,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1375268189}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16539e6a2d5a2f64e8d38bed0fdd0a8f, type: 3}
+  m_Script: {fileID: 11500000, guid: bb615da8638530b47ac909d3daeabe82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpeedFactor: 10
-  LimitTop: 4
-  LimitBottom: -4
-  LimitLeft: -8
-  LimitRight: 8
 --- !u!50 &1375268193
 Rigidbody2D:
   serializedVersion: 4
@@ -4200,7 +4195,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -4471,6 +4466,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1921310344}
   - component: {fileID: 1921310345}
+  - component: {fileID: 1921310346}
   m_Layer: 0
   m_Name: tree
   m_TagString: Untagged
@@ -4540,3 +4536,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &1921310346
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921310343}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.24505818, y: -0.2450571}
+  m_Size: {x: 2.5108836, y: 4.509886}
+  m_Direction: 0
