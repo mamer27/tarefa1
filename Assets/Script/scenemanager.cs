@@ -4,23 +4,54 @@ using UnityEngine;
 
 public class scenemanager : MonoBehaviour
 {
+    public static scenemanager instance = null;
     
     [SerializeField]
-    private Vector3 TapeSpeed = new Vector3(-4f, 0f, 0f);
+    private Vector3 TapeSpeed = new Vector3(-2f, 0f, 0f);
+   
     [SerializeField]
     private Transform Tape = null;
 
-    public uicomponents UIcomponents;
+    public uicomponents UIComponents;
+
+    scenedata sceneData = new scenedata();
 
 
-    void Start()
-    {
-        
+    void Awake() {
+        if (instance == null) {
+
+            instance = this;
+
+        }
+
+
     }
 
     
     void Update()
     {
         Tape.position = Tape.position + TapeSpeed * Time.deltaTime;
+
+        DisplayHudData();
     }
+
+
+
+        public void IncrementcoinCount() {
+
+            sceneData.coinCount++;
+
+
+
+
+        }
+
+        void DisplayHudData() {
+
+        UIComponents.hud.txtcoincount.text = "x " + sceneData.coinCount;
+
+    }
+
 }
+
+
