@@ -13,11 +13,11 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - player
+  - enemies
+  - collectables
+  - platforms
+  - camera
   - 
   - 
   - 
