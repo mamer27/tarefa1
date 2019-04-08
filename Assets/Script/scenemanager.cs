@@ -10,6 +10,9 @@ public class scenemanager : MonoBehaviour
     [SerializeField]
     private Transform Tape = null;
 
+    public uicomponents UIcomponents;
+
+
     void Start()
     {
         
