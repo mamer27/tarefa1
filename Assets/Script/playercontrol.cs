@@ -10,6 +10,8 @@ void OnTriggerEnter2D(Collider2D other) {
 
 if (other.gameObject.CompareTag("Coin")) {
     sfxmanager.instance.ShowCoinParticle(other.gameObject);
+    audiomanager.instance.PlaySoundCoinPickup(other.gameObject);
+    
     Destroy(other.gameObject);
 
 }
