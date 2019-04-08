@@ -37,9 +37,9 @@ public class scenemanager : MonoBehaviour
 
 
 
-        public void IncrementcoinCount() {
+        public void Incrementcoincount() {
 
-            sceneData.coinCount++;
+            sceneData.coincount++;
 
 
 
@@ -48,7 +48,7 @@ public class scenemanager : MonoBehaviour
 
         void DisplayHudData() {
 
-        UIComponents.hud.txtcoincount.text = "x " + sceneData.coinCount;
+        UIComponents.hud.txtcoincount.text = "x " + sceneData.coincount;
 
     }
 

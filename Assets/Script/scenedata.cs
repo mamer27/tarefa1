@@ -6,7 +6,7 @@ using System;
 
 public class scenedata
 {
-public int coincount = 1;
+public int coincount = 0;
 
 
 
