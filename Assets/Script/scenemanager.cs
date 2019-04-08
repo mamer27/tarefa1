@@ -6,7 +6,7 @@ public class scenemanager : MonoBehaviour
 {
     
     [SerializeField]
-    private Vector3 TapeSpeed = new Vector3(-2f, 0f, 0f);
+    private Vector3 TapeSpeed = new Vector3(-4f, 0f, 0f);
     [SerializeField]
     private Transform Tape = null;
 
