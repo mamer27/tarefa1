@@ -8,6 +8,7 @@ TagManager:
   - Tree
   - Ghost
   - raiozin
+  - forbidden
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - collectables
   - platforms
   - camera
-  - 
+  - forbidden
   - 
   - 
   - 

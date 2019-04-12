@@ -16,18 +16,32 @@ if (other.gameObject.CompareTag("Coin")) {
 }
 else if (other.gameObject.layer == LayerMask.NameToLayer("enemies")){
 
+KillPlayer();
+
+
+}
+else if (other.gameObject.layer == LayerMask.NameToLayer("forbidden")){
+
+KillPlayer();
+
+
+
+}
+
+
+
+void KillPlayer() {
+
+
 Camera.main.GetComponentInChildren<AudioSource>().mute = true;
 scenemanager.instance.SetTapeSpeed(0);
 audiomanager.instance.PlaySoundFail(gameObject);
+sfxmanager.instance.ShowDieParticles(gameObject);
 Destroy(gameObject);
 
 }
+
+
+
 }
-
-
-
-
-
-
-
 }
