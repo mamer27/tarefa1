@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5482052406314982056}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pos1
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 5482052406339276901}
   - component: {fileID: 5482052406339276900}
   - component: {fileID: 5310203261394542391}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ghostmoving
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,13 +94,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dae847fdafffe3149a973cdd5c4babb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 0}
   prefab: {fileID: 2248210180212071424, guid: d0fad61d95e56a9469841f6def416899, type: 3}
   spawnpoint: {fileID: 1108527014658981897}
-  waitTime: 3
-  raiospeed: 3
+  waitTime: 0.5
+  raiospeed: 7
   directions:
-  - {x: 1, y: 1, z: 0}
+  - {x: 0, y: 1, z: 0}
 --- !u!1 &5482052407091880112
 GameObject:
   m_ObjectHideFlags: 0
@@ -110,7 +109,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5482052407091880113}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pos2
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}

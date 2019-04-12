@@ -51,7 +51,11 @@ public class scenemanager : MonoBehaviour
         UIComponents.hud.txtcoincount.text = "x " + sceneData.coincount;
 
     }
+public void SetTapeSpeed(float value){
 
+TapeSpeed = new Vector3(value, TapeSpeed.y, TapeSpeed.z);
+
+}
 }
 
 

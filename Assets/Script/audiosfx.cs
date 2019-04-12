@@ -9,7 +9,7 @@ public class audiosfx
 
 {
     public AudioClip coinPickup;
-   
+    public AudioClip fail;
 
 }
 

@@ -5,7 +5,7 @@ using UnityEngine;
 public class raiozin : MonoBehaviour
 {
 
-    public GameObject parent;
+    GameObject parent;
     public GameObject prefab;
     public GameObject spawnpoint;
     public float waitTime = 3f;
@@ -17,7 +17,7 @@ public class raiozin : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        parent = GameObject.Find("Tape");
+        parent = GameObject.Find("tape");
         StartCoroutine(Spawn());
     }
 

@@ -14,7 +14,14 @@ if (other.gameObject.CompareTag("Coin")) {
     Destroy(other.gameObject);
     scenemanager.instance.Incrementcoincount();
 }
+else if (other.gameObject.layer == LayerMask.NameToLayer("enemies")){
 
+Camera.main.GetComponentInChildren<AudioSource>().mute = true;
+scenemanager.instance.SetTapeSpeed(0);
+audiomanager.instance.PlaySoundFail(gameObject);
+Destroy(gameObject);
+
+}
 }
 
 
