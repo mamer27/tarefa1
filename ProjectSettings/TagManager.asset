@@ -9,6 +9,7 @@ TagManager:
   - Ghost
   - raiozin
   - forbidden
+  - gift
   layers:
   - Default
   - TransparentFX

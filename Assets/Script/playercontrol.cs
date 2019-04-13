@@ -14,6 +14,13 @@ if (other.gameObject.CompareTag("Coin")) {
     Destroy(other.gameObject);
     scenemanager.instance.Incrementcoincount();
 }
+if (other.gameObject.CompareTag("gift")) {
+    stopmusicandtape();
+    audiomanager.instance.PlaySoundLevelComplete(gameObject);
+    Destroy(gameObject);
+    
+}
+
 else if (other.gameObject.layer == LayerMask.NameToLayer("enemies")){
 
 KillPlayer();
@@ -28,7 +35,11 @@ KillPlayer();
 
 }
 
-
+void stopmusicandtape(){
+Destroy(gameObject);
+Camera.main.GetComponentInChildren<AudioSource>().mute = true;
+scenemanager.instance.SetTapeSpeed(0);
+}
 
 void KillPlayer() {
 
