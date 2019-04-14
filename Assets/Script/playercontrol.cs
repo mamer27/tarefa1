@@ -18,6 +18,7 @@ if (other.gameObject.CompareTag("gift")) {
     stopmusicandtape();
     audiomanager.instance.PlaySoundLevelComplete(gameObject);
     Destroy(gameObject);
+    scenemanager.instance.Showpanel();
     
 }
 

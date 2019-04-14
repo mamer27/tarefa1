@@ -56,6 +56,26 @@ public void SetTapeSpeed(float value){
 TapeSpeed = new Vector3(value, TapeSpeed.y, TapeSpeed.z);
 
 }
+public void Showpanel() {
+UIComponents.LCpanel.levelcompletepanel.SetActive(true);
+UIComponents.LCpanel.txtscore.text = "" + sceneData.coincount;
+
+
+
+
+
 }
+
+
+
+
+
+
+}
+
+
+
+
+
 
 
