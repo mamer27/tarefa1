@@ -96,8 +96,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 2248210180212071424, guid: d0fad61d95e56a9469841f6def416899, type: 3}
   spawnpoint: {fileID: 1108527014658981897}
-  waitTime: 0.5
-  raiospeed: 7
+  waitTime: 2
+  raiospeed: 5
   directions:
   - {x: 0, y: 1, z: 0}
 --- !u!1 &5482052407091880112

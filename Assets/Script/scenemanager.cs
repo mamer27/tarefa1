@@ -66,6 +66,15 @@ UIComponents.LCpanel.txtscore.text = "" + sceneData.coincount;
 
 }
 
+public void Showpanel2() {
+UIComponents.GOpanel.gameoverpanel.SetActive(true);
+UIComponents.GOpanel.txtscore.text = "" + sceneData.coincount;
+
+
+
+
+
+}
 
 
 

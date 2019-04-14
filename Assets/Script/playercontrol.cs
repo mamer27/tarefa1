@@ -50,6 +50,7 @@ scenemanager.instance.SetTapeSpeed(0);
 audiomanager.instance.PlaySoundFail(gameObject);
 sfxmanager.instance.ShowDieParticles(gameObject);
 Destroy(gameObject);
+scenemanager.instance.Showpanel2();
 
 }
 

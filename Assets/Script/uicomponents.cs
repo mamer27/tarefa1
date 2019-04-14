@@ -42,7 +42,26 @@ public GameObject levelcompletepanel;
 
 
 }
+
+
+[Serializable]
+public class panel2
+
+{
+[Header("Text")]
+
+public Text txtscore;
+
+
+[Header("Other")]
+public GameObject gameoverpanel;
+
+
+
+
+}
 public HUD hud;
 public panel LCpanel;
 
+public panel2 GOpanel;
 }
